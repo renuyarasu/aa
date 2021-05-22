@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div id="root"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Tutorials</title>
+  </head>
+  <body>
+    <div id="root">
+      <button id="increment-button">+1</button>
+      <br /><br />
+      <div id="count-disply">0</div>
+    </div>
+
+    <script>
+      let incrementButton = document.getElementById("increment-button");
+      let countDisply = document.getElementById("count-disply");
+      currentCount = 0;
+      incrementButton.addEventListener('click', () => {
+        // alert('Clicked!!!');
+        currentCount++;
+        countDisply.innerHTML = currentCount;
+      })
+    </script>
+  </body>
 </html>
